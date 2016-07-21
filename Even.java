@@ -4,7 +4,7 @@
  */
 package even;
 
-import java.util.*;
+import java.util.Scanner;
 
 /**
  *
@@ -17,14 +17,14 @@ public class Even {
      */
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int i=sc.nextInt();
-        if(i%2==0)
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        for(int c=a;c<b;c++)
         {
-            System.out.println("even");
-        }
-        else
-        {
-            System.out.println("odd");
+            if(c%2==0)
+            {
+                System.out.println(""+c);
+            }
         }
     }
 }
